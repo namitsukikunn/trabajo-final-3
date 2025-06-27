@@ -7,68 +7,83 @@
 
 <body>
   <a-scene>
-      <a-assets>
-          <img id="dibujo7" src="assets/dibujo7.jpg">
-          <img id="dibujo1" src="assets/dibujo1.jpg">
-          <img id="dibujo4" src="assets/dibujo4.jpg">
-          <img id="dibujo2" src="assets/dibujo2.jpg">
-          <img id="dibujo5" src="assets/dibujo5.jpg">
-          <img id="groundTexture" src="assets/floor1.jpg">
+    <a-assets>
+        <img id="dibujo1" src="assets/dibujo1.jpg">
+        <img id="dibujo2" src="assets/dibujo2.jpg">
+        <img id="dibujo3" src="assets/dibujo3.jpg">
+        <img id="dibujo4" src="assets/dibujo4.jpg">
+        <img id="dibujo5" src="assets/dibujo5.jpg">
+        <img id="dibujo6" src="assets/dibujo6.jpg">
+        <img id="suelo" src="assets/ground.png">
+        <img id="cielo" src="assets/cielo.png">
+    </a-assets>
+    <a-box
+    src="#dibujo1"
+    position="0 2 -5"
+    rotation="0 45 45"
+    scale="2 2 2"
+    animation__position="property: object3D.position.y; to: 2.3; dir: alternate; dur: 2000; loop: true"
+    animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
+    animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+    
+    <a-box
+    src="#dibujo2"
+    position="-5 2 -5"
+    rotation="0 45 45"
+    scale="2 2 2"
+    animation__position="property: object3D.position.y; to: 2.3; dir: alternate; dur: 2000; loop: true"
+    animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
+    animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>  
+   
+    <a-box
+    src="#dibujo3"
+    position="-10 2 2"
+    rotation="0 45 45"
+    scale="2 2 2"
+    animation__position="property: object3D.position.y; to: 2.3; dir: alternate; dur: 2000; loop: true"
+    animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
+    animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+  
+    <a-box
+    src="#dibujo4"
+    position="0 2 5"
+    rotation="0 45 45"
+    scale="2 2 2"
+    animation__position="property: object3D.position.y; to: 2.3; dir: alternate; dur: 2000; loop: true"
+    animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
+    animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+   
+    <a-box
+    src="#dibujo5"
+    position="10 2 -2"
+    rotation="0 45 45"
+    scale="2 2 2"
+    animation__position="property: object3D.position.y; to: 2.3; dir: alternate; dur: 2000; loop: true"
+    animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
+    animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+    
+    <a-box
+    src="#dibujo6"
+    position="0 2 -5"
+    rotation="0 45 45"
+    scale="2 2 2"
+    animation__position="property: object3D.position.y; to: 2.3; dir: alternate; dur: 2000; loop: true"
+    animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
+    animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+   
+    <a-sky color="black"></a-sky>
 
-      </a-assets>
+    <a-plane src="#suelo" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
 
-      <a-box
-      src="#dibujo7"
-      position="0 2 -5"
-      rotation="0 0 0"
-      scale="2 2 2"
-      animation__position="property: object3D.position.y; to: 2.3; dir: alternate; dur: 2000; loop: true"
-      animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
-      animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
-      <a-box
-      src="#dibujo4"
-      position="5 2 -5"
-      rotation="0 0 0"
-      scale="2 2 2"
-      animation__position="property: object3D.position.y; to: 2.3; dir: alternate; dur: 2000; loop: true"
-      animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
-      animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
-      <a-box
-      src="#dibujo1"
-      position="10 2 -5"
-      rotation="0 0 0"
-      scale="2 2 2"
-      animation__position="property: object3D.position.y; to: 2.3; dir: alternate; dur: 2000; loop: true"
-      animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
-      animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
-      <a-box
-      src="#dibujo2"
-      position="-9.5 2 -5"
-      rotation="0 0 0"
-      scale="2 2 2"
-      animation__position="property: object3D.position.y; to: 2.3; dir: alternate; dur: 2000; loop: true"
-      animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
-      animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
-      <a-box
-      src="#dibujo5"
-      position="-4.5 2 -5"
-      rotation="0 0 0"
-      scale="2 2 2"
-      animation__position="property: object3D.position.y; to: 2.3; dir: alternate; dur: 2000; loop: true"
-      animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
-      animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+    <a-light type="ambient" color="#445451"></a-light>
+    <a-light type="point" intensity="1" position="2 4 4"></a-light>
 
-      <a-sky color="black"></a-sky>
+    <a-text value="Mis trabajos!" position="0 5 -2"></a-text>  
 
-      <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
-
-      <a-light type="ambient" color="#3c3947"></a-light>
-      <a-light type="point" intensity="1" position="2 4 4"></a-light>
-
-      <a-camera>
-        <a-cursor></a-cursor>
-      </a-camera>  
-  </a-scene>
+    <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>      
+</a-scene>
 </body>
 
 </html>
